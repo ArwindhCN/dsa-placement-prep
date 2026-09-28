@@ -17,7 +17,7 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 
 | Total | Easy | Medium | Hard |
 |---|---|---|---|
-| 3 | 3 | 0 | 0 |
+| 5 | 5 | 0 | 0 |
 
 ## Progress
 
@@ -28,3 +28,5 @@ Status: ✅ solved on my own · 💡 solved with a hint · 👀 read the solutio
 | 1 | 2026-09-27 | [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | Arrays | ✅ |
 | 2 | 2026-09-27 | [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | Arrays | ✅ |
 | 3 | 2026-09-27 | [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | Arrays | ✅ |
+| 4 | 2026-09-28 | [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Easy | Arrays | 💡 |
+| 5 | 2026-09-28 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Sliding Window | ✅ |
