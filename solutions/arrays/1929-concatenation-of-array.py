@@ -1,7 +1,6 @@
 # Problem: https://leetcode.com/problems/concatenation-of-array/
 # Difficulty: Easy | Topic: Arrays
 # Key idea: ans[i] = ans[i + n] = nums[i] - or just nums + nums.
-# Status: solution from another chat, not written by me - redo with the index loop.
 
 
 class Solution(object):
