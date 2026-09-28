@@ -6,6 +6,10 @@ Format: `Problem (#) -> key idea`
 
 ## Arrays
 
+- Running Sum of 1d Array (1480) -> keep a running total; each answer = previous total + current number
+- Concatenation of Array (1929) -> ans[i] = ans[i + n] = nums[i] (or nums + nums)
+- Richest Customer Wealth (1672) -> sum each row, track the max seen so far
+
 ## Strings
 
 ## Hashing
