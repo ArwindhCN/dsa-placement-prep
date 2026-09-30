@@ -161,3 +161,19 @@ any(...), all(...)
 - **`return`, not `print`.** LeetCode calls my method and checks what it *returns*. A `print` shows up in stdout but the answer comes back as `None`.
 - **`self`.** Methods live on the `Solution` class. LeetCode runs `Solution().twoSum(nums, target)`, and Python passes that object in as `self` automatically. To call my own helper method, use `self.helper(...)`.
 - **Indentation.** `else` must line up exactly with its `if`. Everything inside a block is indented one level (4 spaces) further than the line that opens it.
+- **Don't name variables after built-ins** (`max`, `min`, `sum`, `next`, `list`, `str`, `len`). It hides the function: a later `max(a, b)` crashes with `'int' object is not callable`. Use `best`, `total`, `largest`.
+- **Local test prints nothing?** `sol.method(x)` returns the answer and throws it away. To see it: `print(sol.method(x))`.
+- **Class-level variables aren't visible inside methods.** `total = 0` in the class body, then `total += x` in a method, gives `UnboundLocalError`. Anything that belongs to one call (totals, counters, results) goes *inside* the method.
+- **Starting value for max tracking:** `nums[0]` or `float('-inf')`, never `0` (fails when all numbers are negative). `0` is fine only if the constraints guarantee positives. Always read the constraints.
+- **Loop over what you need:** values → `for x in nums`; index → `range(len(nums))`; both → `enumerate(nums)`.
+- **Don't slice just to skip an element.** `nums[1:]` copies the list (O(n) space). Use `range(1, len(nums))`.
+- **"Best so far" must be checked where the streak can end, including at the end of the array.** In 485, updating the max only when a `0` appears missed a run of 1s at the very end. Fix: update on every step, or once more after the loop.
+- **`%` vs `//` for digits:** `n % 10` *gives* the last digit; `n // 10` *removes* it. Count digits with `while n > 0: count += 1; n //= 10`. Stop when the **number** is 0, not when the last digit is 0 (that breaks on 10, 100).
+- **Time Limit Exceeded on a tiny input = infinite loop.** Check that something inside the `while` changes the loop condition.
+- **Short code isn't always fast.** `nums + nums`, `sum(row)`, and slicing all loop underneath, O(n) each. Don't call `sum()` twice on the same row; store it.
+- **Never delete from a list while looping over its indexes.** `range(len(nums))` is computed once, so after a `pop`/`remove` the list is shorter and later `i` values run past the end → `IndexError`. Overwrite in place with a write pointer instead (27).
+- **Write pointer: decide what `k` means and stick to it.** "Next empty slot" → write, then `k += 1`, return `k` (27). "Last kept element" → `k += 1`, then write, return `k + 1` (26). Mixing the two gives off-by-one bugs.
+- **`()` calls, `[]` indexes.** `nums.append[0]` → `TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'`. It's `nums.append(0)`.
+- **`nums = new` vs `nums[:] = new`.** `nums = new` only moves my local name; the caller's list is unchanged. `nums[:] = new` copies values into the original list. But building `new` is still O(n) extra space, so it's not truly in place (283).
+- **Swap in one line:** `a, b = b, a`. No temp variable needed.
+- **LeetCode's "Beats X%" is noise** at small runtimes. Complexity is what matters.
