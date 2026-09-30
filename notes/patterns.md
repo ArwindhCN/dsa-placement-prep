@@ -10,6 +10,10 @@ Format: `Problem (#) -> key idea`
 - Concatenation of Array (1929) -> ans[i] = ans[i + n] = nums[i] (or nums + nums)
 - Richest Customer Wealth (1672) -> sum each row, track the max seen so far
 - Max Consecutive Ones (485) -> count the current streak, reset on 0, update max on every 1 (or once more after the loop)
+- Find Numbers with Even Number of Digits (1295) -> count digits with `while n > 0: n //= 10`, then check count % 2
+- Remove Element (27) -> write pointer k: copy every nums[i] != val to nums[k], k += 1; return k
+- Remove Duplicates from Sorted Array (26) -> k = last unique index; if nums[i] > nums[k]: k += 1, nums[k] = nums[i]; return k + 1
+- Move Zeroes (283) -> write pointer + swap: if nums[i] != 0, swap nums[i] and nums[k], k += 1
 
 ## Strings
 

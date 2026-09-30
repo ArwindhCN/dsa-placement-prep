@@ -17,7 +17,7 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 
 | Total | Easy | Medium | Hard |
 |---|---|---|---|
-| 5 | 5 | 0 | 0 |
+| 9 | 9 | 0 | 0 |
 
 ## Progress
 
@@ -30,3 +30,7 @@ Status: ✅ solved on my own · 💡 solved with a hint · 👀 read the solutio
 | 3 | 2026-09-27 | [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | Arrays | ✅ |
 | 4 | 2026-09-28 | [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Easy | Arrays | ✅ |
 | 5 | 2026-09-28 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Sliding Window | ✅ |
+| 6 | 2026-09-30 | [1295. Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy | Arrays | ✅ |
+| 7 | 2026-09-30 | [27. Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | ✅ |
+| 8 | 2026-09-30 | [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Arrays | ✅ |
+| 9 | 2026-09-30 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Arrays | ✅ |
