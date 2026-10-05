@@ -175,5 +175,11 @@ any(...), all(...)
 - **Write pointer: decide what `k` means and stick to it.** "Next empty slot" → write, then `k += 1`, return `k` (27). "Last kept element" → `k += 1`, then write, return `k + 1` (26). Mixing the two gives off-by-one bugs.
 - **`()` calls, `[]` indexes.** `nums.append[0]` → `TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'`. It's `nums.append(0)`.
 - **`nums = new` vs `nums[:] = new`.** `nums = new` only moves my local name; the caller's list is unchanged. `nums[:] = new` copies values into the original list. But building `new` is still O(n) extra space, so it's not truly in place (283).
+- **Negative indexes don't crash in Python.** `nums[-1]` silently reads the *last* element. If a pointer can go below 0, guard it: `if i >= 0 and nums[i] ...` (88).
+- **`and` short-circuits.** In `i >= 0 and nums[i] > x`, if `i >= 0` is False Python never evaluates `nums[i]`. Put the safety check first.
+- **In-place merge/insert: if the front is full, fill from the back** where the free space is, so nothing unread gets overwritten (88).
+- **Read n in the constraints before choosing an approach.** n ≈ 10^4 or more → O(n²) is ~50M+ steps, too slow in Python (TLE). Need O(n log n) or O(n). (977: bubble sort timed out.)
+- **"Fill from the back" in place only works if the back is free** (88). If every slot holds unread data, use a separate result array (977).
+- **Two pointers from both ends: loop `while l <= r`** when the middle element still needs handling; `l < r` skips it.
 - **Swap in one line:** `a, b = b, a`. No temp variable needed.
 - **LeetCode's "Beats X%" is noise** at small runtimes. Complexity is what matters.

@@ -17,7 +17,7 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 
 | Total | Easy | Medium | Hard |
 |---|---|---|---|
-| 9 | 9 | 0 | 0 |
+| 11 | 11 | 0 | 0 |
 
 ## Progress
 
@@ -34,3 +34,5 @@ Status: ✅ solved on my own · 💡 solved with a hint · 👀 read the solutio
 | 7 | 2026-09-30 | [27. Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | ✅ |
 | 8 | 2026-09-30 | [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Arrays | ✅ |
 | 9 | 2026-09-30 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Arrays | ✅ |
+| 10 | 2026-10-06 | [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | Arrays | ✅ |
+| 11 | 2026-10-06 | [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Easy | Arrays | ✅ |
