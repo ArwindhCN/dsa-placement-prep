@@ -181,5 +181,8 @@ any(...), all(...)
 - **Read n in the constraints before choosing an approach.** n ≈ 10^4 or more → O(n²) is ~50M+ steps, too slow in Python (TLE). Need O(n log n) or O(n). (977: bubble sort timed out.)
 - **"Fill from the back" in place only works if the back is free** (88). If every slot holds unread data, use a separate result array (977).
 - **Two pointers from both ends: loop `while l <= r`** when the middle element still needs handling; `l < r` skips it.
+- **Two sequences of different lengths:** loop `range(max(len1, len2))` and guard each access with `if i < len1:` (1768).
+- **Build strings with a list + `"".join()`,** not `s += c` in a loop. Strings are immutable, so each `+=` copies the whole string (can be O(n²)).
+- **`s.split()` vs `s.split(" ")`.** No argument splits on any run of whitespace and ignores leading/trailing spaces. `split(" ")` splits on every single space and leaves empty strings `''` for repeated/trailing spaces (58).
 - **Swap in one line:** `a, b = b, a`. No temp variable needed.
 - **LeetCode's "Beats X%" is noise** at small runtimes. Complexity is what matters.
