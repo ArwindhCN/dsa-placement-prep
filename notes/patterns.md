@@ -19,6 +19,9 @@ Format: `Problem (#) -> key idea`
 
 ## Strings
 
+- Merge Strings Alternately (1768) -> loop to the longer length, append each char only if i < len; "".join() at the end
+- Length of Last Word (58) -> len(s.split()[-1]); O(1) space: scan from the end, skip spaces, count letters
+
 ## Hashing
 
 ## Sliding Window
