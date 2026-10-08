@@ -17,7 +17,7 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 
 | Total | Easy | Medium | Hard |
 |---|---|---|---|
-| 13 | 13 | 0 | 0 |
+| 15 | 15 | 0 | 0 |
 
 ## Progress
 
@@ -38,3 +38,5 @@ Status: ✅ solved on my own · 💡 solved with a hint · 👀 read the solutio
 | 11 | 2026-10-06 | [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Easy | Arrays | ✅ |
 | 12 | 2026-10-07 | [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Easy | Strings | ✅ |
 | 13 | 2026-10-07 | [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | Strings | ✅ |
+| 14 | 2026-10-08 | [344. Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Strings | ✅ |
+| 15 | 2026-10-08 | [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Strings | ✅ |
