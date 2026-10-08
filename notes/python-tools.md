@@ -180,9 +180,12 @@ any(...), all(...)
 - **In-place merge/insert: if the front is full, fill from the back** where the free space is, so nothing unread gets overwritten (88).
 - **Read n in the constraints before choosing an approach.** n ≈ 10^4 or more → O(n²) is ~50M+ steps, too slow in Python (TLE). Need O(n log n) or O(n). (977: bubble sort timed out.)
 - **"Fill from the back" in place only works if the back is free** (88). If every slot holds unread data, use a separate result array (977).
-- **Two pointers from both ends: loop `while l <= r`** when the middle element still needs handling; `l < r` skips it.
+- **Two pointers from both ends: `l <= r` vs `l < r`.** Use `<=` when the middle element still needs handling (977: it must be placed in the result). Use `<` when it doesn't (344: the middle letter stays put when reversing).
+- **`s[::-1]` makes a new list.** When the problem says "modify in place", the original is unchanged and you get Wrong Answer (344).
 - **Two sequences of different lengths:** loop `range(max(len1, len2))` and guard each access with `if i < len1:` (1768).
 - **Build strings with a list + `"".join()`,** not `s += c` in a loop. Strings are immutable, so each `+=` copies the whole string (can be O(n²)).
 - **`s.split()` vs `s.split(" ")`.** No argument splits on any run of whitespace and ignores leading/trailing spaces. `split(" ")` splits on every single space and leaves empty strings `''` for repeated/trailing spaces (58).
+- **`x in string` and `x in list` scan (O(n)); `x in set` hashes (O(1)).** A fixed number of scans (e.g. 26 letters) is still O(n) overall (1832).
+- **`import string` → `string.ascii_lowercase`** is `"abcdefghijklmnopqrstuvwxyz"`. No need to type the alphabet.
 - **Swap in one line:** `a, b = b, a`. No temp variable needed.
 - **LeetCode's "Beats X%" is noise** at small runtimes. Complexity is what matters.
