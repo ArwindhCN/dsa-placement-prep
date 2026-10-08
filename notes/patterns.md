@@ -21,6 +21,8 @@ Format: `Problem (#) -> key idea`
 
 - Merge Strings Alternately (1768) -> loop to the longer length, append each char only if i < len; "".join() at the end
 - Length of Last Word (58) -> len(s.split()[-1]); O(1) space: scan from the end, skip spaces, count letters
+- Reverse String (344) -> two pointers l, r: swap and move inward while l < r
+- Check if the Sentence Is Pangram (1832) -> every letter a-z must appear: len(set(sentence)) == 26
 
 ## Hashing
 
