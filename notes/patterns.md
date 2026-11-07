@@ -23,6 +23,10 @@ Format: `Problem (#) -> key idea`
 - Length of Last Word (58) -> len(s.split()[-1]); O(1) space: scan from the end, skip spaces, count letters
 - Reverse String (344) -> two pointers l, r: swap and move inward while l < r
 - Check if the Sentence Is Pangram (1832) -> every letter a-z must appear: len(set(sentence)) == 26
+- First Unique Character in a String (387) -> pass 1: count chars (Counter / dict); pass 2: first index with count 1
+- Is Subsequence (392) -> pointer i on s, j on t; j always moves, i moves on a match; return i == len(s)
+- Longest Common Prefix (14) -> sort, then compare only first and last word char by char (or check column by column across all words)
+- Roman to Integer (13) -> dict of values; subtract a symbol if it's smaller than the next one, else add
 
 ## Hashing
 

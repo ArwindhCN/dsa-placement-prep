@@ -10,14 +10,14 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0. Warm-up | Python tools refresher + 15-20 LeetCode easies (arrays, strings) | In progress |
-| 1. NeetCode 150 | Arrays & Hashing → Two Pointers → Sliding Window → Stack → Binary Search → Linked List → Trees → Tries → Heap → Backtracking → Graphs → 1-D DP → 2-D DP → Greedy → Intervals → Math & Geometry → Bit Manipulation | Not started |
+| 0. Warm-up | Python tools refresher + 15-20 LeetCode easies (arrays, strings) | Done ✅ |
+| 1. NeetCode 150 | Arrays & Hashing → Two Pointers → Sliding Window → Stack → Binary Search → Linked List → Trees → Tries → Heap → Backtracking → Graphs → 1-D DP → 2-D DP → Greedy → Intervals → Math & Geometry → Bit Manipulation | Up next |
 
 ## Stats
 
 | Total | Easy | Medium | Hard |
 |---|---|---|---|
-| 15 | 15 | 0 | 0 |
+| 19 | 19 | 0 | 0 |
 
 ## Progress
 
@@ -40,3 +40,7 @@ Status: ✅ solved on my own · 💡 solved with a hint · 👀 read the solutio
 | 13 | 2026-10-07 | [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | Strings | ✅ |
 | 14 | 2026-10-08 | [344. Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Strings | ✅ |
 | 15 | 2026-10-08 | [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Strings | ✅ |
+| 16 | 2026-10-09 | [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | Strings | ✅ |
+| 17 | 2026-10-09 | [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Strings | ✅ |
+| 18 | 2026-10-10 | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Strings | ✅ |
+| 19 | 2026-11-07 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Strings | ✅ |

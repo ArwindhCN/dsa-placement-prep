@@ -187,5 +187,11 @@ any(...), all(...)
 - **`s.split()` vs `s.split(" ")`.** No argument splits on any run of whitespace and ignores leading/trailing spaces. `split(" ")` splits on every single space and leaves empty strings `''` for repeated/trailing spaces (58).
 - **`x in string` and `x in list` scan (O(n)); `x in set` hashes (O(1)).** A fixed number of scans (e.g. 26 letters) is still O(n) overall (1832).
 - **`import string` → `string.ascii_lowercase`** is `"abcdefghijklmnopqrstuvwxyz"`. No need to type the alphabet.
+- **Counting pattern = two passes:** count everything first (`Counter(s)` or `d[c] = d.get(c, 0) + 1`), then scan again to use the counts (387).
+- **A dict/set over a fixed alphabet is O(1) space,** at most 26 keys no matter how long the input is.
+- **Two pointers on two different sequences:** one pointer always advances, the other only on a match; finish when either runs out (392).
+- **Sorting strings costs more than O(n log n)**: each comparison can take up to m characters, so O(n log n · m) (14).
+- **`lst.sort()` changes the caller's list; `sorted(lst)` returns a new one** (O(n) copy). Say which you're using in interviews.
+- **Look ahead safely:** check `i + 1 < n` before reading `s[i + 1]` (13).
 - **Swap in one line:** `a, b = b, a`. No temp variable needed.
 - **LeetCode's "Beats X%" is noise** at small runtimes. Complexity is what matters.
