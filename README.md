@@ -5,6 +5,7 @@ Placement DSA practice in Python: a warm-up on LeetCode easies, then NeetCode 15
 - LeetCode: [Arwindh_C_N](https://leetcode.com/u/Arwindh_C_N/)
 - Key idea per problem: [notes/patterns.md](notes/patterns.md)
 - Python toolkit reference: [notes/python-tools.md](notes/python-tools.md)
+- NeetCode 150 checklist by topic: [notes/neetcode-150.md](notes/neetcode-150.md)
 
 ## Plan
 
